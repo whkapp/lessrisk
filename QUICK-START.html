@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Less Risk No Glory — Quick Start</title>
+  <style>
+    :root{--bg:#050507;--card:#0f0f12;--line:#22222a;--gold:#d7b66d;--gold2:#f4df9a;--text:#f0ece4;--muted:#8a8490;--green:#3ecf8e;--red:#ff5757}
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:"Segoe UI",Inter,Arial,sans-serif;background:#050507;color:#f0ece4;min-height:100vh}
+    .wrap{max-width:860px;margin:0 auto;padding:32px 20px 60px}
+    .lang-bar{display:flex;justify-content:flex-end;gap:8px;margin-bottom:24px}
+    .lang-btn{padding:6px 14px;border-radius:20px;border:1px solid #2a2a36;background:#0f0f12;color:#8a8490;font-size:12px;cursor:pointer;letter-spacing:.04em;transition:.15s}
+    .lang-btn.active{background:#d7b66d;color:#070605;border-color:#d7b66d;font-weight:700}
+    .hero{background:#0f0f12;border:1px solid #22222a;border-radius:22px;padding:28px;margin-bottom:20px}
+    .brand{display:flex;align-items:center;gap:18px}
+    .brand img{width:72px;height:72px;border-radius:50%;border:1px solid rgba(215,182,109,.3);object-fit:cover}
+    .eyebrow{font-size:10px;letter-spacing:.4em;color:#8a8490;text-transform:uppercase;margin-bottom:4px}
+    h1{font-size:36px;font-weight:900;background:linear-gradient(90deg,#e0e0e0,#f4df9a,#8b6b2c);-webkit-background-clip:text;background-clip:text;color:transparent;line-height:1.1;margin-bottom:8px}
+    .sub{font-size:16px;color:#b0aba0;line-height:1.6}
+    .grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px}
+    @media(max-width:700px){.grid{grid-template-columns:1fr}}
+    .card{background:#0f0f12;border:1px solid #22222a;border-radius:18px;padding:22px}
+    .card h2{font-size:18px;font-weight:700;color:#f4df9a;margin-bottom:16px}
+    .steps{list-style:none;display:grid;gap:10px}
+    .step{display:flex;gap:12px;align-items:flex-start;padding-bottom:10px;border-bottom:1px solid #181820}
+    .step:last-child{border-bottom:0;padding-bottom:0}
+    .num{width:28px;height:28px;border-radius:50%;display:grid;place-items:center;flex:0 0 28px;background:linear-gradient(135deg,#f4df9a,#d7b66d);color:#070605;font-weight:900;font-size:13px}
+    .step-body{font-size:14px;line-height:1.5;color:#c8c3bc}
+    .step-body strong{color:#f0ece4}
+    code{background:#181820;border:1px solid #2a2a36;padding:2px 7px;border-radius:6px;font-size:12px;font-family:"Cascadia Code","Consolas",monospace;color:#d7b66d}
+    .flow{display:grid;gap:8px}
+    .flow-item{display:flex;align-items:center;gap:12px;padding:10px 14px;border-radius:12px;background:#0a0a0e;border:1px solid #1e1e28;font-size:13px;color:#b0aba0}
+    .flow-icon{font-size:18px;flex:0 0 24px;text-align:center}
+    .flow-item strong{color:#f0ece4}
+    .tbl{width:100%;border-collapse:collapse;font-size:13px;margin-top:8px}
+    .tbl th{text-align:left;padding:8px 10px;color:#8a8490;font-weight:600;border-bottom:1px solid #22222a;font-size:11px;letter-spacing:.04em;text-transform:uppercase}
+    .tbl td{padding:8px 10px;border-bottom:1px solid #181820;color:#c8c3bc}
+    .tbl td:first-child{color:#f4df9a;font-weight:600;font-family:monospace;font-size:12px}
+    .tbl tr:last-child td{border-bottom:0}
+    .url-box{display:flex;align-items:center;gap:10px;padding:12px 14px;background:#0a0a0e;border:1px solid rgba(215,182,109,.27);border-radius:12px;margin-top:12px}
+    .url-box code{background:none;border:none;padding:0;font-size:13px;color:#d7b66d;flex:1}
+    .warn{background:#1a0a0a;border:1px solid rgba(255,87,87,.27);border-radius:12px;padding:14px;margin-top:12px;font-size:13px;color:#c8a0a0;line-height:1.6}
+    .warn strong{color:#ff8888}
+    .foot{margin-top:24px;text-align:center;font-size:12px;color:#444450;letter-spacing:.06em}
+  </style>
+</head>
+<body>
+<div class="wrap">
+  <div class="lang-bar">
+    <button class="lang-btn active" onclick="setLang('en')" id="btn-en">EN English</button>
+    <button class="lang-btn" onclick="setLang('nl')" id="btn-nl">NL Nederlands</button>
+  </div>
+
+  <section class="hero">
+    <div class="brand">
+      <img src="less-risk-no-glory-logo.jpg" alt="Less Risk No Glory" onerror="this.style.display='none'">
+      <div>
+        <div class="eyebrow">Less Risk No Glory</div>
+        <h1 data-en="MT5 Quick Start" data-nl="MT5 Snelstart">MT5 Quick Start</h1>
+        <p class="sub" data-en="LRNG_TradeReceiver v3.01 — direct server polling, no Helper needed." data-nl="LRNG_TradeReceiver v3.01 — directe serverpolling, geen Helper nodig.">LRNG_TradeReceiver v3.01 — direct server polling, no Helper needed.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="grid">
+    <section class="card">
+      <h2 data-en="Installation" data-nl="Installatie">Installation</h2>
+      <ol class="steps">
+        <li class="step"><div class="num">1</div>
+          <div class="step-body" data-en="Run <strong>LessRisk_Installer.exe</strong> — EA copied to MT5 Experts folder automatically." data-nl="Voer <strong>LessRisk_Installer.exe</strong> uit — EA automatisch gekopieerd naar MT5 Experts-map.">Run <strong>LessRisk_Installer.exe</strong> — EA copied to MT5 Experts folder automatically.</div>
+        </li>
+        <li class="step"><div class="num">2</div>
+          <div class="step-body" data-en="MT5: <strong>Tools > Options > Expert Advisors</strong> — enable WebRequest for the URL below." data-nl="MT5: <strong>Extra > Instellingen > Expert Advisors</strong> — schakel WebRequest in voor de URL hieronder.">MT5: <strong>Tools > Options > Expert Advisors</strong> — enable WebRequest for URL below.</div>
+        </li>
+        <li class="step"><div class="num">3</div>
+          <div class="step-body" data-en="Navigator: drag <strong>LRNG_TradeReceiver</strong> onto any chart (e.g. BTCUSD H1)." data-nl="Navigator: sleep <strong>LRNG_TradeReceiver</strong> naar een chart (bijv. BTCUSD H1).">Navigator: drag <strong>LRNG_TradeReceiver</strong> onto any chart (e.g. BTCUSD H1).</div>
+        </li>
+        <li class="step"><div class="num">4</div>
+          <div class="step-body" data-en="EA settings > Common: enable <strong>Allow Algo Trading</strong>, click OK." data-nl="EA-instellingen > Common: schakel <strong>Allow Algo Trading</strong> in, klik OK.">EA settings > Common: enable <strong>Allow Algo Trading</strong>, click OK.</div>
+        </li>
+        <li class="step"><div class="num">5</div>
+          <div class="step-body" data-en="Enable <strong>Algo Trading</strong> in MT5 toolbar (green). Smiley appears top-right of chart." data-nl="Zet <strong>Algo Trading</strong> aan in MT5-werkbalk (groen). Smiley verschijnt rechtsbovenin chart.">Enable <strong>Algo Trading</strong> in MT5 toolbar (green). Smiley appears top-right.</div>
+        </li>
+      </ol>
+      <div class="url-box"><code>https://projects.doodsbang.nl/LRNG/api</code></div>
+    </section>
+
+    <section class="card">
+      <h2 data-en="How signals work" data-nl="Hoe signalen werken">How signals work</h2>
+      <div class="flow">
+        <div class="flow-item"><div class="flow-icon">&#128225;</div><div data-en="Signal published (Telegram or dashboard)" data-nl="Signaal gepubliceerd (Telegram of dashboard)">Signal published (Telegram or dashboard)</div></div>
+        <div class="flow-item"><div class="flow-icon">&#128260;</div><div data-en="EA polls server every 2 seconds" data-nl="EA pollt server elke 2 seconden">EA polls server every 2 seconds</div></div>
+        <div class="flow-item"><div class="flow-icon">&#128202;</div><div data-en="<strong>Panel appears</strong>: direction, Entry, SL, TP1/2/3, risk stats" data-nl="<strong>Paneel verschijnt</strong>: richting, Entry, SL, TP1/2/3, risicostatistieken"><strong>Panel appears</strong>: Entry, SL, TP1/2/3, risk stats</div></div>
+        <div class="flow-item"><div class="flow-icon">&#9989;</div><div data-en="Click <strong>EXECUTE</strong> to place, or <strong>SKIP</strong> to dismiss" data-nl="Klik <strong>EXECUTE</strong> om te plaatsen of <strong>SKIP</strong> om te sluiten">Click <strong>EXECUTE</strong> or <strong>SKIP</strong></div></div>
+        <div class="flow-item"><div class="flow-icon">&#9201;</div><div data-en="Signal valid 30 min (countdown in panel)" data-nl="Signaal 30 min geldig (afteltimer in paneel)">Signal valid 30 min (countdown shown)</div></div>
+      </div>
+    </section>
+  </div>
+
+  <section class="card" style="margin-bottom:16px">
+    <h2 data-en="EA Settings" data-nl="EA-instellingen">EA Settings</h2>
+    <table class="tbl">
+      <thead><tr><th data-en="Setting" data-nl="Instelling">Setting</th><th data-en="Default" data-nl="Standaard">Default</th><th data-en="Description" data-nl="Beschrijving">Description</th></tr></thead>
+      <tbody>
+        <tr><td>ForceDefaultLot</td><td>true</td><td data-en="Use DefaultLot for every order" data-nl="Gebruik DefaultLot voor elke order">Use DefaultLot for every order</td></tr>
+        <tr><td>DefaultLot</td><td>0.50</td><td data-en="Lot size on Execute" data-nl="Lotgrootte bij Execute">Lot size on Execute</td></tr>
+        <tr><td>SignalValidMins</td><td>30</td><td data-en="Minutes signal stays active" data-nl="Minuten signaal actief blijft">Minutes signal stays active</td></tr>
+        <tr><td>PlayAlertSound</td><td>true</td><td data-en="Sound on new signal" data-nl="Geluid bij nieuw signaal">Sound on new signal</td></tr>
+        <tr><td>MagicNumber</td><td>777005</td><td data-en="Unique ID for EA orders" data-nl="Uniek ID voor EA-orders">Unique ID for EA orders</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="card" style="margin-bottom:16px">
+    <h2 data-en="Troubleshooting" data-nl="Problemen oplossen">Troubleshooting</h2>
+    <table class="tbl">
+      <thead><tr><th data-en="Problem" data-nl="Probleem">Problem</th><th data-en="Solution" data-nl="Oplossing">Solution</th></tr></thead>
+      <tbody>
+        <tr><td data-en='"WebRequest BLOCKED"' data-nl='"WebRequest GEBLOKKEERD"'>"WebRequest BLOCKED"</td><td data-en="Add https://projects.doodsbang.nl/LRNG/api to MT5 WebRequest whitelist" data-nl="Voeg https://projects.doodsbang.nl/LRNG/api toe aan whitelist">Add URL to MT5 WebRequest whitelist</td></tr>
+        <tr><td data-en="Panel does not appear" data-nl="Paneel verschijnt niet">Panel does not appear</td><td data-en="Algo Trading ON + EA attached to chart" data-nl="Algo Trading AAN + EA gekoppeld aan chart">Algo Trading ON + EA attached</td></tr>
+        <tr><td data-en="Wrong symbol" data-nl="Verkeerd symbool">Wrong symbol</td><td data-en="Check broker symbol name (XAUUSD vs GOLD etc)" data-nl="Controleer symboolnaam broker (XAUUSD vs GOLD etc)">Check broker symbol name</td></tr>
+        <tr><td data-en="Wrong lot size" data-nl="Verkeerde lotgrootte">Wrong lot size</td><td data-en="Set ForceDefaultLot=true, adjust DefaultLot" data-nl="Stel ForceDefaultLot=true in, pas DefaultLot aan">Set ForceDefaultLot=true</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <div class="warn">
+    <strong data-en="Risk Warning" data-nl="Risicowaarschuwing">Risk Warning</strong><br>
+    <span data-en="Trading carries substantial risk of loss. This EA and its signals do not constitute financial advice. Always review every signal before executing." data-nl="Handelen brengt een substantieel verliesrisico met zich mee. Deze EA en zijn signalen vormen geen financieel advies. Beoordeel elk signaal altijd zelf voor executie.">Trading carries substantial risk of loss. This EA and its signals do not constitute financial advice. Always review every signal before executing.</span>
+  </div>
+
+  <div class="foot">Less Risk No Glory &middot; v3.01 &middot; <span data-en="Discipline Today, Freedom Tomorrow." data-nl="Discipline vandaag, vrijheid morgen.">Discipline Today, Freedom Tomorrow.</span></div>
+</div>
+<script>
+function setLang(l){
+  document.documentElement.lang=l;
+  document.querySelectorAll('[data-en]').forEach(function(e){var t=e.getAttribute('data-'+l);if(t)e.innerHTML=t;});
+  document.querySelectorAll('.lang-btn').forEach(function(b){b.classList.remove('active');});
+  document.getElementById('btn-'+l).classList.add('active');
+  try{localStorage.setItem('lrng-lang',l);}catch(ex){}
+}
+(function(){
+  var s=null;try{s=localStorage.getItem('lrng-lang');}catch(ex){}
+  var n=(navigator.language||'').toLowerCase();
+  setLang(s||(n.startsWith('nl')?'nl':'en'));
+})();
+</script>
+</body>
+</html>

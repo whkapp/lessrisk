@@ -1,0 +1,185 @@
+================================================================================
+LESS RISK NO GLORY — END USER LICENSE AGREEMENT (EULA)
+EINDGEBRUIKERSLICENTIEOVEREENKOMST
+Version / Versie: 2026-05-16
+================================================================================
+
+ENGLISH VERSION
+---------------
+
+By installing, downloading, or using this software you agree to these terms.
+If you do not agree, do not install or use this software.
+
+1. GRANT OF LICENSE
+   Less Risk No Glory grants you a limited, revocable, non-exclusive,
+   non-transferable personal license to install and use the
+   LRNG_TradeReceiver Expert Advisor (EA) for MetaTrader 5 solely for your
+   own trading account within the Less Risk No Glory signal service.
+
+2. WHAT THIS SOFTWARE DOES
+   - The EA installs directly in MetaTrader 5 as an Expert Advisor.
+   - It polls the Less Risk No Glory signal server at regular intervals.
+   - When a signal is received, a confirmation panel appears on your chart.
+   - YOU must click "Execute" to place any order. No order is placed without
+     your explicit confirmation.
+   - Risk statistics (risk amount, profit target, R:R, balance) are
+     calculated and shown for informational purposes only.
+   - No external Helper application, background service or .ini file is
+     required. The EA communicates directly with the server.
+
+3. PERMITTED USE
+   - Personal use on your own MT5 account(s) only.
+   - You may install the EA on multiple devices you personally own and
+     operate under the same licensed account.
+
+4. NOT FINANCIAL ADVICE
+   This software, its signals, calculations, and outputs do not constitute
+   financial, investment, legal or tax advice. You trade entirely at your
+   own risk.
+
+5. RISK DISCLOSURE
+   - Trading financial instruments carries substantial risk of loss,
+     including the total loss of invested capital.
+   - Less Risk No Glory provides no guarantee of profit, performance,
+     uptime, signal accuracy, server availability, or error-free operation.
+   - Less Risk No Glory is not liable for any losses, missed signals,
+     failed orders, slippage, broker issues, requotes, network outages,
+     incorrect symbol mapping, wrong lot sizes, or any other outcome
+     resulting from use of this software.
+
+6. YOUR RESPONSIBILITY
+   Before going live you must verify:
+   - Broker symbol names (e.g. BTCUSD, XAUUSD, NAS100)
+   - Lot size and margin requirements
+   - Stop Loss / Take Profit values
+   - AutoTrading / Algo Trading is enabled in MT5
+   - WebRequest URL is whitelisted:
+     https://projects.doodsbang.nl/LRNG/api
+   - Windows / VPS stability
+   Every trade must be reviewed by you before clicking Execute.
+
+7. PROHIBITED USE
+   You may not:
+   - Copy, share, sublicense, sell or redistribute this software.
+   - Reverse-engineer, decompile, or disassemble the EA.
+   - White-label or rebrand for commercial resale.
+   - Bypass or modify the license or signal key verification.
+
+8. UPDATES AND CHANGES
+   Less Risk No Glory may update, modify, suspend, or discontinue the
+   software, server endpoints, signal format, or license terms at any time
+   without notice. Older versions may stop functioning without warning.
+
+9. DATA AND PRIVACY
+   The EA sends your MT5 account number (as an anonymous client ID) to the
+   signal server solely to identify your session for signal delivery.
+   No personal data, trade history, or account balance is transmitted.
+
+10. TERMINATION
+    Your license terminates immediately upon breach of these terms.
+    Less Risk No Glory may block or revoke access without prior notice.
+
+11. APPLICABLE LAW
+    Use this software only where permitted by local law, regulations,
+    and your broker's terms of service. You are solely responsible for
+    compliance.
+
+12. ENTIRE AGREEMENT
+    This license constitutes the complete agreement for use of this
+    software unless otherwise agreed in writing.
+
+By clicking "I Agree" or installing this software you confirm you have
+read, understood, and accepted these terms.
+
+================================================================================
+
+NEDERLANDSE VERSIE
+------------------
+
+Door deze software te installeren, downloaden of gebruiken ga je akkoord
+met deze voorwaarden. Als je niet akkoord gaat, installeer of gebruik
+de software dan niet.
+
+1. LICENTIEVERLENING
+   Less Risk No Glory verleent je een beperkte, herroepbare, niet-exclusieve,
+   niet-overdraagbare persoonlijke licentie om de LRNG_TradeReceiver Expert
+   Advisor (EA) voor MetaTrader 5 te installeren en te gebruiken uitsluitend
+   voor je eigen handelsaccount binnen de Less Risk No Glory signaalservice.
+
+2. WAT DEZE SOFTWARE DOET
+   - De EA installeert direct in MetaTrader 5 als Expert Advisor.
+   - Hij pollt de Less Risk No Glory signaalserver op vaste intervallen.
+   - Bij ontvangst van een signaal verschijnt een bevestigingspaneel op je chart.
+   - JIJ moet op "Execute" klikken om een order te plaatsen. Er wordt nooit
+     automatisch een order geplaatst zonder jouw expliciete bevestiging.
+   - Risicostatistieken (risicobedrag, winstdoel, R:R, saldo) worden berekend
+     en getoond puur ter informatie.
+   - Geen externe Helper-applicatie, achtergrondservice of .ini-bestand is
+     nodig. De EA communiceert direct met de server.
+
+3. TOEGESTAAN GEBRUIK
+   - Alleen persoonlijk gebruik op je eigen MT5-account(s).
+   - Je mag de EA installeren op meerdere apparaten die je zelf bezit en
+     beheert onder hetzelfde gelicentieerde account.
+
+4. GEEN FINANCIEEL ADVIES
+   Deze software, de signalen, berekeningen en uitvoer vormen geen financieel,
+   beleggings-, juridisch of fiscaal advies. Je handelt volledig op eigen risico.
+
+5. RISICOMELDING
+   - Handelen in financiële instrumenten brengt een substantieel verliesrisico
+     met zich mee, inclusief het volledig verlies van ingelegd kapitaal.
+   - Less Risk No Glory geeft geen garantie op winst, performance, uptime,
+     signaalnauwkeurigheid, serverbeschikbaarheid of foutloze werking.
+   - Less Risk No Glory is niet aansprakelijk voor verliezen, gemiste signalen,
+     mislukte orders, slippage, brokerfouten, requotes, netwerkuitval, verkeerde
+     symboolmapping, verkeerde lotgroottes of enig ander gevolg van het gebruik
+     van deze software.
+
+6. JOUW VERANTWOORDELIJKHEID
+   Controleer voor live gebruik:
+   - Brokersymboolnamen (bijv. BTCUSD, XAUUSD, NAS100)
+   - Lotgrootte en margevereisten
+   - Stop Loss / Take Profit waarden
+   - AutoTrading / Algo Trading is ingeschakeld in MT5
+   - WebRequest URL staat op de whitelist:
+     https://projects.doodsbang.nl/LRNG/api
+   - Windows / VPS stabiliteit
+   Elke trade moet door jou worden beoordeeld vóór je op Execute klikt.
+
+7. VERBODEN GEBRUIK
+   Het is niet toegestaan om:
+   - De software te kopiëren, delen, sublicentiëren, verkopen of door te sturen.
+   - De EA te reverse-engineeren, decompileren of te disassembleren.
+   - De software te whitelabelen of rebranden voor commerciële doorverkoop.
+   - De licentie- of signaalsleutelverificatie te omzeilen of te wijzigen.
+
+8. UPDATES EN WIJZIGINGEN
+   Less Risk No Glory mag de software, serverendpoints, signaalformaat of
+   licentievoorwaarden op elk moment zonder kennisgeving aanpassen, pauzeren
+   of beëindigen. Oudere versies kunnen zonder waarschuwing ophouden te werken.
+
+9. GEGEVENS EN PRIVACY
+   De EA stuurt je MT5-accountnummer (als anonieme client-ID) naar de
+   signaalserver uitsluitend om je sessie te identificeren voor signaalbezorging.
+   Geen persoonsgegevens, handelsgeschiedenis of accountsaldo wordt verstuurd.
+
+10. BEËINDIGING
+    Je licentie vervalt direct bij schending van deze voorwaarden.
+    Less Risk No Glory kan toegang zonder voorafgaande kennisgeving blokkeren
+    of intrekken.
+
+11. TOEPASSELIJK RECHT
+    Gebruik deze software alleen waar dit wettelijk is toegestaan in jouw land,
+    regio en brokeromgeving. Je bent zelf verantwoordelijk voor naleving.
+
+12. VOLLEDIGE OVEREENKOMST
+    Deze tekst vormt de volledige basis voor het gebruik van de software,
+    tenzij schriftelijk anders overeengekomen.
+
+Door op "I Agree" / "Ik ga akkoord" te klikken of de software te installeren,
+bevestig je dat je deze voorwaarden hebt gelezen, begrepen en geaccepteerd.
+
+================================================================================
+Less Risk No Glory  |  https://projects.doodsbang.nl/LRNG/
+================================================================================
